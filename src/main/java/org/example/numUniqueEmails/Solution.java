@@ -15,33 +15,14 @@ public class Solution {
 
     private String normalizeEmail(String email) {
         StringBuilder normalizedEmail = new StringBuilder();
-        boolean found_at = false;
-        boolean charAllowedToBeAdded;
-        int index = 0;
-        while (index < email.length()) {
-            charAllowedToBeAdded = true;
-
-            if (found_at) {
-                normalizedEmail.append(email.charAt(index));
-                index++;
-            }
-            else if (email.charAt(index) == '+') {
-                while (index < email.length() && (email.charAt(index) != '@')) index++;
-            }
-
-            if (index >= email.length()) break;
-
-            if (email.charAt(index) == '@') {
-                found_at = true;
-            }
-            else if (email.charAt(index) == '.' && !found_at) {
-                charAllowedToBeAdded = false;
-            }
-
-            if (charAllowedToBeAdded) {
-                normalizedEmail.append(email.charAt(index));
-            }
-            index++;
+        int indexOfAt = email.indexOf('@');
+        for (int i = 0; i < indexOfAt; i++) {
+            if (email.charAt(i) == '.') continue;
+            if (email.charAt(i) == '+') break;
+            normalizedEmail.append(email.charAt(i));
+        }
+        for (int i = indexOfAt; i < email.length(); i++) {
+            normalizedEmail.append(email.charAt(i));
         }
         return normalizedEmail.toString();
     }

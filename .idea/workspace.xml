@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="849afccc-d5b6-4a9b-9ede-af817899046d" name="Changes" comment="save">
+    <list default="true" id="849afccc-d5b6-4a9b-9ede-af817899046d" name="Changes" comment="numUniqueEmails done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/findRestaurant/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/findRestaurant/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/trim/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/trim/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/numUniqueEmails/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/numUniqueEmails/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,10 +48,10 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -133,7 +132,21 @@
       <workItem from="1726841938685" duration="23392000" />
       <workItem from="1727127435158" duration="5665000" />
       <workItem from="1727201252601" duration="81737000" />
-      <workItem from="1728055171542" duration="21454000" />
+      <workItem from="1728055171542" duration="30397000" />
+      <workItem from="1728301471831" duration="395000" />
+      <workItem from="1728301898407" duration="953000" />
+      <workItem from="1728338476432" duration="5077000" />
+      <workItem from="1728686293882" duration="3291000" />
+      <workItem from="1728731232083" duration="381000" />
+      <workItem from="1728854784248" duration="5813000" />
+      <workItem from="1728900156228" duration="624000" />
+      <workItem from="1728945457163" duration="3250000" />
+      <workItem from="1729008773333" duration="17667000" />
+      <workItem from="1729192303999" duration="11935000" />
+      <workItem from="1729359045669" duration="1410000" />
+      <workItem from="1729424153115" duration="1209000" />
+      <workItem from="1729459810498" duration="273000" />
+      <workItem from="1729551285503" duration="1747000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -175,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727307286804</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="numUniqueEmails done">
+      <option name="closed" value="true" />
+      <created>1728158522602</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728158522602</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,90 +205,21 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="save" />
-    <option name="LAST_COMMIT_MESSAGE" value="save" />
+    <MESSAGE value="numUniqueEmails done" />
+    <option name="LAST_COMMIT_MESSAGE" value="numUniqueEmails done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/findPermutationDifference/Solution.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/sortString/Solution.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="90" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/decodeMessage/Solution.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/cellsInRange/Solution.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/longestPalindrome/Solution.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/addStrings/Solution.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/detectCapitalUse/Solution.java</url>
-          <line>6</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/reverseStr/Solution.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/countBinarySubstrings/Solution.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/shortestCompletingWord/Solution.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/shortestToChar/Solution.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/toGoatLatin/Solution.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="59" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/largeGroupPositions/Solution.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/buddyStrings/Solution.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/buddyStrings/Solution.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/uncommonFromSentences/Solution.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="67" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/numUniqueEmails/Solution.java</url>
-          <line>6</line>
-          <option name="timeStamp" value="69" />
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/reformat/Solution.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="93" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
