@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="849afccc-d5b6-4a9b-9ede-af817899046d" name="Changes" comment="numUniqueEmails done">
+    <list default="true" id="849afccc-d5b6-4a9b-9ede-af817899046d" name="Changes" comment="maxScore">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/reformat/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/reformat/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/maxScore/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/maxScore/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +148,7 @@
       <workItem from="1729459810498" duration="273000" />
       <workItem from="1729551285503" duration="6558000" />
       <workItem from="1730403636394" duration="5551000" />
-      <workItem from="1730568754995" duration="3782000" />
+      <workItem from="1730568754995" duration="11738000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -206,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729553256958</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="maxScore">
+      <option name="closed" value="true" />
+      <created>1730572979729</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1730572979729</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,7 +224,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="save" />
     <MESSAGE value="numUniqueEmails done" />
-    <option name="LAST_COMMIT_MESSAGE" value="numUniqueEmails done" />
+    <MESSAGE value="maxScore" />
+    <option name="LAST_COMMIT_MESSAGE" value="maxScore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -240,6 +249,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/freqAlphabets/Solution.java</url>
           <line>30</line>
           <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/destCity/Solution.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="102" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
