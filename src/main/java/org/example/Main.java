@@ -1,12 +1,12 @@
 package org.example;
 
-import org.example.reformat.*;
+import org.example.freqAlphabets.*;
 
 
 
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.reformat("ab123"));
+        System.out.println(solution.freqAlphabets("1326#"));
     }
 }

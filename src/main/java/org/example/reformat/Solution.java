@@ -1,22 +1,25 @@
 package org.example.reformat;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
+
 public class Solution {
     public String reformat(String s) {
 
-        int[] frequencyOfDigits = new int[10];
-        int[] frequencyOfCharacters = new int[26];
 
         int totalFrequencyOfDigits = 0;
         int totalFrequencyOfCharacters = 0;
 
         int halfLengthOfS = s.length() / 2;
-
+        Queue<Character> characterQueue = new LinkedList<>();
+        Queue<Character> digitsQueue = new LinkedList<>();
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) <= '9' && s.charAt(i) >= '0') {
-                frequencyOfDigits[s.charAt(i) - '0']++;
+                digitsQueue.add(s.charAt(i));
                 totalFrequencyOfDigits++;
             } else {
-                frequencyOfCharacters[s.charAt(i) - 'a']++;
+                characterQueue.add(s.charAt(i));
                 totalFrequencyOfCharacters++;
             }
 
@@ -25,50 +28,46 @@ public class Solution {
         if (Math.abs(totalFrequencyOfCharacters - totalFrequencyOfDigits) > 1) return "";
 
         StringBuilder result = new StringBuilder();
-        /// i should start with the even number // example x3x3x
-        int odd = 0, even = 0;
-        int[] arrayToHoldCharsWithOddNumberOfOccurrence;
-        int[] arrayToHoldCharsWithEvenNumberOfOccurrence;
 
-        char base_char_for_odd,base_char_for_even;
-        int oddFrequencyCounter,evenFrequencyCounter;
-        if (totalFrequencyOfCharacters % 2 == 1) {
-            arrayToHoldCharsWithOddNumberOfOccurrence = frequencyOfCharacters;
-            arrayToHoldCharsWithEvenNumberOfOccurrence = frequencyOfDigits;
+        boolean charGoesFirst;
+        if (isEven(totalFrequencyOfCharacters) && !isEven(totalFrequencyOfDigits)) charGoesFirst = true;
+        else charGoesFirst = false;
+        // covid2019
+        // 5c - 4d
+        // c2o0v1i9d
 
-            oddFrequencyCounter = totalFrequencyOfCharacters;
-            evenFrequencyCounter  = totalFrequencyOfDigits;
-
-            base_char_for_odd = 'a';
-            base_char_for_even = '0';
-
-        } else {
-            arrayToHoldCharsWithEvenNumberOfOccurrence = frequencyOfCharacters;
-            arrayToHoldCharsWithOddNumberOfOccurrence = frequencyOfDigits;
-
-            evenFrequencyCounter = totalFrequencyOfCharacters;
-            oddFrequencyCounter   = totalFrequencyOfDigits;
-
-            base_char_for_even = 'a';
-            base_char_for_odd = '0';
-        }
-
-        while (oddFrequencyCounter > 0 || evenFrequencyCounter > 0) {
-            while (odd < arrayToHoldCharsWithOddNumberOfOccurrence.length && arrayToHoldCharsWithOddNumberOfOccurrence[odd] < 1) odd++;
-            while (even < arrayToHoldCharsWithEvenNumberOfOccurrence.length && arrayToHoldCharsWithEvenNumberOfOccurrence[even] < 1) even++;
-
-            if (odd < arrayToHoldCharsWithOddNumberOfOccurrence.length && arrayToHoldCharsWithOddNumberOfOccurrence[odd] > 0) {
-                result.append((char) (base_char_for_odd + odd));
-                arrayToHoldCharsWithOddNumberOfOccurrence[odd]--;
-                oddFrequencyCounter--;
+        // 619mama
+        // 3c - 4d
+        // m6a1m9a
+        Character temp;
+        for (int i = 0; i < s.length(); i++) {
+            if (isEven(i)) {
+                if (!isEven(totalFrequencyOfDigits)) {
+                    temp = characterQueue.poll();
+                    result.append(temp != null ? temp : "");
+                    temp = digitsQueue.poll();
+                } else {
+                    temp = digitsQueue.poll();
+                    result.append(temp != null ? temp : "");
+                    temp = characterQueue.poll();
+                }
+            } else {
+                if (isEven(totalFrequencyOfDigits)) {
+                    temp = digitsQueue.poll();
+                    result.append(temp != null ? temp : "");
+                    temp = characterQueue.poll();
+                } else {
+                    temp = characterQueue.poll();
+                    result.append(temp != null ? temp : "");
+                    temp = digitsQueue.poll();
+                }
             }
-
-            if (even < arrayToHoldCharsWithEvenNumberOfOccurrence.length && arrayToHoldCharsWithEvenNumberOfOccurrence[even] > 0) {
-                result.append((char) (base_char_for_even + even));
-                arrayToHoldCharsWithEvenNumberOfOccurrence[even]--;
-                evenFrequencyCounter--;
-            }
+            result.append(temp != null ? temp : "");
         }
         return result.toString();
+    }
+
+    boolean isEven(int n) {
+        return (1 & n) != 1;
     }
 }
