@@ -3,45 +3,32 @@ package org.example.convertTime;
 class Solution {
     public int convertTime(String current, String correct) {
         // Algorithm used
-        // 1. Parse the current and correct time to get the hours and minutes
-        // 2. Calculate the difference in hours and minutes
-        // 3. Calculate the number of steps needed to reach the correct time
-        // 4. Return the number of steps
-
-        // for Step 3
-        // 1. Calculate the number of steps needed to reach the correct hours
-        // 2. Calculate the number of steps needed to reach the correct minutes
-            // if the difference in minutes is negative, add 60 to the difference in minutes and subtract 1 from the difference in hours
-        // 3. Return the sum of the steps needed to reach the correct hours and minutes
+        // convert both times to minutes
+        // find the difference in minutes
+        // divide the difference by 60,15, 5, 1
+        // add the quotient to the number of steps
+        // find the remainder
+        // repeat the process with the remainder
+        // return the number of steps
 
 
-        // "09:41" ; 53 15*3 + 5*1 + 1*3 ; "10:34" => 7
-        int numberOfSteps = 0;
-        int currentHours = Integer.parseInt(current.substring(0, 2));
-        int correctHours = Integer.parseInt(correct.substring(0, 2));
+        int currentMinutes = convertToMinutes(current);
+        int correctMinutes = convertToMinutes(correct);
+        int difference = correctMinutes - currentMinutes;
 
-        int currentMinutes = Integer.parseInt(current.substring(3));
-        int correctMinutes = Integer.parseInt(correct.substring(3));
-
-        int differenceInHours = correctHours - currentHours;
-
-        int differenceInMinutes = correctMinutes - currentMinutes;
-
-        if (differenceInMinutes < 0){
-            differenceInMinutes += 60;
-            differenceInHours -=1;
+        int steps = 0;
+        int[] divisors = {60, 15, 5, 1};
+        for (int divisor : divisors) {
+            steps += difference / divisor;
+            difference = difference % divisor;
         }
+        return steps;
 
-        numberOfSteps += differenceInHours ;
+    }
 
-        int[] allowedSteps = {1, 5, 15};
-        int currentIndex = allowedSteps.length - 1;
+    private int convertToMinutes(String current) {
+        String[] time = current.split(":");
+        return Integer.parseInt(time[0]) * 60 + Integer.parseInt(time[1]);
 
-        while (differenceInMinutes != 0) {
-            numberOfSteps += differenceInMinutes / allowedSteps[currentIndex];
-            differenceInMinutes = differenceInMinutes % allowedSteps[currentIndex--];
-        }
-
-        return numberOfSteps;
     }
 }
