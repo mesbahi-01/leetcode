@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="849afccc-d5b6-4a9b-9ede-af817899046d" name="Changes" comment="save">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/convertTime/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/convertTime/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/isPathCrossing/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/isPathCrossing/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,11 +61,11 @@
   </component>
   <component name="RunManager" selected="Application.Solution">
     <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.removeDigit.Solution" />
+      <option name="MAIN_CLASS_NAME" value="org.example.greatestLetter.Solution" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.removeDigit.*" />
+          <option name="PATTERN" value="org.example.greatestLetter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -73,12 +73,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="org.example.countPoints.Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.countPoints.Solution" />
+    <configuration name="org.example.maxRepeating.Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.maxRepeating.Solution" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.countPoints.*" />
+          <option name="PATTERN" value="org.example.maxRepeating.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,12 +86,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="org.example.countVowelSubstrings.Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.countVowelSubstrings.Solution" />
+    <configuration name="org.example.percentageLetter.Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.percentageLetter.Solution" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.countVowelSubstrings.*" />
+          <option name="PATTERN" value="org.example.percentageLetter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,12 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="org.example.digitSum.Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.digitSum.Solution" />
+    <configuration name="org.example.slowestKey.Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.slowestKey.Solution" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.digitSum.*" />
+          <option name="PATTERN" value="org.example.slowestKey.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,12 +112,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="org.example.getLucky.Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.getLucky.Solution" />
+    <configuration name="org.example.strongPasswordCheckerII.Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.strongPasswordCheckerII.Solution" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.getLucky.*" />
+          <option name="PATTERN" value="org.example.strongPasswordCheckerII.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,10 +144,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Solution" />
-        <item itemvalue="Application.org.example.digitSum.Solution" />
-        <item itemvalue="Application.org.example.countPoints.Solution" />
-        <item itemvalue="Application.org.example.countVowelSubstrings.Solution" />
-        <item itemvalue="Application.org.example.getLucky.Solution" />
+        <item itemvalue="Application.org.example.strongPasswordCheckerII.Solution" />
+        <item itemvalue="Application.org.example.percentageLetter.Solution" />
+        <item itemvalue="Application.org.example.maxRepeating.Solution" />
+        <item itemvalue="Application.org.example.slowestKey.Solution" />
       </list>
     </recent_temporary>
   </component>
@@ -209,6 +209,7 @@
       <workItem from="1733754902208" duration="598000" />
       <workItem from="1734096816466" duration="6766000" />
       <workItem from="1734474457293" duration="17106000" />
+      <workItem from="1734607816527" duration="19852000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -306,7 +307,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734526895720</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="save">
+      <option name="closed" value="true" />
+      <created>1734607944361</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1734607944361</updated>
+    </task>
+    <task id="LOCAL-00014" summary="save">
+      <option name="closed" value="true" />
+      <created>1734630937511</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1734630937511</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -403,6 +420,36 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/removeDigit/Solution.java</url>
           <line>5</line>
           <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/isPathCrossing/Solution.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/slowestKey/Solution.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/slowestKey/Solution.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/maxRepeating/Solution.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/percentageLetter/Solution.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/greatestLetter/Solution.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="131" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
