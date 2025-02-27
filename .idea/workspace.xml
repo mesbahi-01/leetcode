@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="849afccc-d5b6-4a9b-9ede-af817899046d" name="Changes" comment="save">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/clearDigits/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/countKeyChanges/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/countPrefixSuffixPairs/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/isSubstringPresent/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/isValid/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/maximumLengthSubstring/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/minimumChairs/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/numberOfSpecialChars/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/numberOfSpecialChars2/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,34 +58,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Solution.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dell/JaspersoftWorkspace/MyReports/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.inline.completion&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Solution.executor": "Run",
+    "Application.longestPalindrome.Solution.executor": "Run",
+    "Application.org.example.convert.Solution.executor": "Debug",
+    "Application.org.example.maxRepeating.Solution.executor": "Debug",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Dell/JaspersoftWorkspace/MyReports/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.inline.completion",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Dell\IdeaProjects\leetcode\src\main\java\org\example\FinalValueofVariableAfterPerformingOperations" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Solution">
+  <component name="RunManager">
     <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.greatestLetter.Solution" />
       <module name="leetcode" />
@@ -162,10 +173,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.org.example.maxRepeating.Solution" />
         <item itemvalue="Application.Solution" />
         <item itemvalue="Application.org.example.strongPasswordCheckerII.Solution" />
         <item itemvalue="Application.org.example.percentageLetter.Solution" />
-        <item itemvalue="Application.org.example.maxRepeating.Solution" />
         <item itemvalue="Application.org.example.slowestKey.Solution" />
       </list>
     </recent_temporary>
@@ -243,7 +254,10 @@
       <workItem from="1738615312383" duration="65000" />
       <workItem from="1738615382047" duration="3465000" />
       <workItem from="1738680752205" duration="112000" />
-      <workItem from="1738680869617" duration="9811000" />
+      <workItem from="1738680869617" duration="10952000" />
+      <workItem from="1739025575891" duration="3220000" />
+      <workItem from="1739654467595" duration="4959000" />
+      <workItem from="1740348026163" duration="7670000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -365,7 +379,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738616132726</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="save">
+      <option name="closed" value="true" />
+      <created>1738692628828</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1738692628828</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -492,6 +514,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/greatestLetter/Solution.java</url>
           <line>7</line>
           <option name="timeStamp" value="131" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/convert/Solution.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="135" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
