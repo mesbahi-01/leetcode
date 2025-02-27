@@ -36,6 +36,9 @@
     &quot;accountId&quot;: &quot;a252abcd-b655-48a8-a5ec-857ab5453aec&quot;
   }
 }</component>
+  <component name="LLMProjectSettings">
+    <option name="turned_on" value="false" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -54,6 +57,7 @@
   "keyToString": {
     "Application.Solution.executor": "Run",
     "Application.longestPalindrome.Solution.executor": "Run",
+    "Application.myAtoi.Solution.executor": "Debug",
     "Application.org.example.convert.Solution.executor": "Debug",
     "Application.org.example.maxRepeating.Solution.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -249,7 +253,7 @@
       <workItem from="1738680869617" duration="10952000" />
       <workItem from="1739025575891" duration="3220000" />
       <workItem from="1739654467595" duration="4959000" />
-      <workItem from="1740348026163" duration="9282000" />
+      <workItem from="1740348026163" duration="13774000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -395,7 +399,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740686938141</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="save">
+      <option name="closed" value="true" />
+      <created>1740688271273</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1740688271273</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -524,9 +536,14 @@
           <option name="timeStamp" value="131" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/convert/Solution.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="135" />
+          <url>file://$PROJECT_DIR$/src/main/java/myAtoi/Solution.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="138" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/myAtoi/Solution.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="140" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
