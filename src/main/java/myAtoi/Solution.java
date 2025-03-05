@@ -1,52 +1,31 @@
 package myAtoi;
 
 class Solution {
-    public static void main(String[] args) {
-        new Solution().myAtoi("-91283472332");
-    }
-
     public int myAtoi(String s) {
+        int i = 0, sign = 1, result = 0;
+        int n = s.length();
 
-        int result = 0;
+        // Skip Spaces
+        while(i < n && s.charAt(i) == ' ') i++;
 
-        // Ignore any leading whitespace (" ")
-        int k = 0;
-        while (k < s.length() && s.charAt(k) == ' ') {
-            k++;
+        // Check sign
+        if(i<n && (s.charAt(i) == '-' || s.charAt(i) == '+')){
+            sign = (s.charAt(i) == '+') ? 1 : -1;
+            i++;
         }
 
-        // Determine the sign by checking if the next character is '-' or '+'
-        int signedness = 1;
-        if (k < s.length() && s.charAt(k) == '-') {
-            signedness = -1;
-            k++;
-        }
+        // Read Digits
+        while(i<n && Character.isDigit(s.charAt(i))){
+            int digit = s.charAt(i) - '0';
 
-        // skipping leading zeros
-        while (k < s.length() && s.charAt(k) == '0') {
-            k++;
-        }
-
-        for (; k < s.length(); k++) {
-            if (s.charAt(k) <= '9' && s.charAt(k) >= '0') {
-                if ((result * 10 + s.charAt(k) - '0') < Integer.MAX_VALUE && (result * 10 + s.charAt(k) - '0') > Integer.MIN_VALUE)
-                    result = result * 10 + s.charAt(k) - '0';
-                else {
-                    result = signedness == 1 ? Integer.MAX_VALUE : Integer.MIN_VALUE;
-                }
-            } else {
-                break;
+            // Handle Overflow
+            if(result > (Integer.MAX_VALUE - digit)/10){
+                return (sign == 1) ? Integer.MAX_VALUE : Integer.MIN_VALUE;
             }
+
+            result = result * 10 + digit;
+            i++;
         }
-
-        result *= signedness;
-
-        if (result < Integer.MIN_VALUE) return Integer.MIN_VALUE;
-        if (result > Integer.MAX_VALUE) return Integer.MAX_VALUE;
-
-        return result;
-
-
+        return result * sign;
     }
-
 }
