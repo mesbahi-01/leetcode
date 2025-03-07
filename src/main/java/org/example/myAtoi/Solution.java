@@ -1,4 +1,4 @@
-package myAtoi;
+package org.example.myAtoi;
 
 class Solution {
     public int myAtoi(String s) {
