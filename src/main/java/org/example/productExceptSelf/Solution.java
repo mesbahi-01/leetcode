@@ -7,42 +7,20 @@ import java.util.stream.Stream;
 
 class Solution {
     public int[] productExceptSelf(int[] nums) {
-        int[] output = new int[nums.length];
+        int n = nums.length;
+        int[] res = new int[n];
 
-        Map<Integer, Integer> index_totalProductOfUpcomingValues_map = new HashMap<>();
-        Map<Integer, Integer> index_totalProductOfPreviousValues_map = new HashMap<>();
-
-        for (int i = 0; i < nums.length; i++) {
-            output[i] = calculateProductOfPreviousValues(nums, i, index_totalProductOfPreviousValues_map)
-                    * calculateProductOfUpcomingValues(nums, i, index_totalProductOfUpcomingValues_map);
+        res[0] = 1;
+        for (int i = 1; i < n; i++) {
+            res[i] = res[i - 1] * nums[i - 1];
         }
 
-
-        return output;
-    }
-
-    private int calculateProductOfUpcomingValues(int[] nums, int i, Map<Integer, Integer> indexTotalProductOfUpcomingValuesMap) {
-        if (i >=nums.length - 1 ) return 1;
-        else {
-            indexTotalProductOfUpcomingValuesMap.put(
-                    i,
-                    nums[i + 1] *
-                            calculateProductOfUpcomingValues(nums,i + 1,indexTotalProductOfUpcomingValuesMap)
-            );
-
-            return indexTotalProductOfUpcomingValuesMap.get(i);
+        int postfix = 1;
+        for (int i = n - 1; i >= 0; i--) {
+            res[i] *= postfix;
+            postfix *= nums[i];
         }
-
+        return res;
     }
 
-    private int calculateProductOfPreviousValues(int[] nums, int i, Map<Integer, Integer> indexTotalProductOfPreviousValues_map) {
-        if (i <= 0) return 1;
-        else {
-            indexTotalProductOfPreviousValues_map.put(
-                    i,
-                    nums[i - 1] * calculateProductOfPreviousValues(nums, i - 1, indexTotalProductOfPreviousValues_map)
-            );
-        }
-        return indexTotalProductOfPreviousValues_map.get(i);
-    }
-}  
+}
