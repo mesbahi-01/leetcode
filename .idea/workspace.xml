@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="849afccc-d5b6-4a9b-9ede-af817899046d" name="Changes" comment="save">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/restoreIpAddresses/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/restoreIpAddresses/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +33,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/mesbahi-01/leetcode.git&quot;,
-    &quot;accountId&quot;: &quot;a252abcd-b655-48a8-a5ec-857ab5453aec&quot;
+    &quot;accountId&quot;: &quot;537b95dc-a296-4bd8-9641-9b4d20ba1135&quot;
   }
 }</component>
   <component name="MarkdownSettingsMigration">
@@ -55,14 +55,16 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Debug&quot;,
     &quot;Application.Solution.executor&quot;: &quot;Run&quot;,
     &quot;Application.longestPalindrome.Solution.executor&quot;: &quot;Run&quot;,
     &quot;Application.myAtoi.Solution.executor&quot;: &quot;Debug&quot;,
     &quot;Application.org.example.convert.Solution.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.org.example.encodeAndDecode.Solution.executor&quot;: &quot;Debug&quot;,
     &quot;Application.org.example.exist.Solution.executor&quot;: &quot;Debug&quot;,
     &quot;Application.org.example.maxRepeating.Solution.executor&quot;: &quot;Debug&quot;,
     &quot;Application.org.example.multiply.Solution.executor&quot;: &quot;Run&quot;,
+    &quot;Application.org.example.restoreIpAddresses.Solution.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -423,7 +425,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741358993035</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="save">
+      <option name="closed" value="true" />
+      <created>1742565180820</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1742565180820</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -555,6 +565,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
           <line>12</line>
           <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/restoreIpAddresses/Solution.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="133" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
